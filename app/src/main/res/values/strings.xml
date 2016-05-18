@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">OCRTextRecognitionApp</string>
+    <string name="call_ocr_api">Call OCR API</string>
+    <string name="ocr_api_result">OCR API Result</string>
 </resources>

@@ -1,16 +1,42 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     android:paddingBottom="@dimen/activity_vertical_margin"
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.ocrtextrecognitionapp.MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
+    <Button android:id="@+id/btn_call_api"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="OCR" />
-</RelativeLayout>
+        android:text="@string/call_ocr_api"
+        android:textAllCaps="false" />
+    <TextView
+        android:id="@+id/result"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:text="@string/ocr_api_result"
+        android:textColor="@android:color/black"
+        android:textStyle="bold"
+        android:textSize="18sp" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:scrollbars="none"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/actual_result"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:textColor="@android:color/black"
+            android:textSize="16sp" />
+    </ScrollView>
+
+</LinearLayout>
